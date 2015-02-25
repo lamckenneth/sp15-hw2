@@ -1,0 +1,7 @@
+<% person = Person.new(params[:name], params[:age]) %>
+
+<h1><%= person.introduce %></h1>
+
+<h2>I was born in <%= (person.birth_year.to_i - 1).to_s %> or <%= person.birth_year %>.</h2>
+
+<h2>And my nickname is <%= person.nickname %>.</h2>
